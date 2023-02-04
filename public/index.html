@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>CALCULATOR APP</title>
+</head>
+<body>
+
+    <div class="container__calculadora">
+
+
+
+
+        <div class="container__head">
+
+            <h1>Calculator app</h1>
+
+            <ul>
+                <li id="btn_1">
+                    1
+                </li>
+
+                 <li id="btn_2">
+                    2
+                </li>
+
+                <li id="btn_3">
+                    3
+                </li>
+            </ul>
+
+        </div>
+
+
+        <form action="" name="calculadora">
+
+            <input class="textfield" type="textfield" name="ans" readonly autocomplete="off">
+            <br>
+            <input class="btn" type="button" value="7" onclick="document.calculadora.ans.value+='7'">
+            <input class="btn" type="button" value="8" onclick="document.calculadora.ans.value+='8'">
+            <input class="btn" type="button" value="9" onclick="document.calculadora.ans.value+='9'">
+            <input class="btn" type="button" value="+" onclick="document.calculadora.ans.value+='+'">
+            <br>
+
+            <input class="btn" type="button" value="4" onclick="document.calculadora.ans.value+='4'">
+            <input class="btn" type="button" value="5" onclick="document.calculadora.ans.value+='5'">
+            <input class="btn" type="button" value="6" onclick="document.calculadora.ans.value+='6'">
+            <input class="btn" type="button" value="-" onclick="document.calculadora.ans.value+='-'">
+            <br>
+
+            <input class="btn" type="button" value="1" onclick="document.calculadora.ans.value+='1'">
+            <input class="btn" type="button" value="2" onclick="document.calculadora.ans.value+='2'">
+            <input class="btn" type="button" value="3" onclick="document.calculadora.ans.value+='3'">
+            <input class="btn" type="button" value="x" onclick="document.calculadora.ans.value+='*'">
+
+            <br>
+
+            <input class="btn" type="button" value="0" onclick="document.calculadora.ans.value+='0'">
+            <input class="btn" type="button" value="." onclick="document.calculadora.ans.value+='.'">
+            <input class="btn" type="button" value="/" onclick="document.calculadora.ans.value+='/'">
+            <input class="btn" type="reset" value="C">
+            <br>
+    
+            <input class="btn" id="equal" type="button" value="=" onclick="document.calculadora.ans.value=eval(document.calculadora.ans.value)">
+   
+
+
+        </form>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
